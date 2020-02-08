@@ -1,0 +1,19 @@
+{
+  "name": "2020_node.js-study",
+  "version": "1.0.0",
+  "description": "",
+  "main": "node.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pppeum62/2020_node.js-Study.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pppeum62/2020_node.js-Study/issues"
+  },
+  "homepage": "https://github.com/pppeum62/2020_node.js-Study#readme"
+}
