@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/pppeum62/2020_node.js-Study/issues"
   },
-  "homepage": "https://github.com/pppeum62/2020_node.js-Study#readme"
+  "homepage": "https://github.com/pppeum62/2020_node.js-Study#readme",
+  "dependencies": {
+    "socket.io": "^2.3.0"
+  }
 }
