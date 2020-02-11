@@ -35,7 +35,20 @@ html
       $('#name').val(name);
       });
 
-      socket.on('receive message', function(msg){   // 메세지를 받았을 때
+      socket.on('change name', function(oldname, name) {    // 닉네임 변경 시
+          $('#name').val(name);
+          $('#chatLog').append('<알림> ' + oldname + '님이 ' + name + '님으로 닉네임을 변경했습니다.\n');
+      });
+
+      socket.on('receive message', function(msg){       // 메세지를 받았을 때
       $('#chatLog').append(msg+'\n');
       $('#chatLog').scrollTop($('#chatLog')[0].scrollHeight);
+      });
+
+      socket.on('new_connect', function(name) {         // 채팅방에 접속했을 때
+          $('#chatLog').append('<알림> ' + name + '님이 채팅방에 접속했습니다.\n');
+      });
+
+      socket.on('new_disconnect', function(name) {      // 채팅방 접속이 끊어졌을 때
+          $('#chatLog').append('<알림> ' + name + '님이 채팅창을 떠났습니다.\n');
       });
