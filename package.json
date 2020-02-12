@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/pppeum62/2020_node.js-Study#readme",
   "dependencies": {
+    "pug": "^2.0.4",
     "socket.io": "^2.3.0"
   }
 }
